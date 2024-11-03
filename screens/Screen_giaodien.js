@@ -22,10 +22,10 @@ const Screen_giaodien = () => {
     const fetchData = async () => {
       try {
         const categoriesResponse = await axios.get(
-          "https://671d0fbd09103098807c2176.mockapi.io/category"
+          "http://localhost:8084/categories"
         );
         const locationsResponse = await axios.get(
-          "https://671d0fbd09103098807c2176.mockapi.io/location"
+          "http://localhost:8084/locations"
         );
         setCategories(categoriesResponse.data);
         setLocations(locationsResponse.data);
